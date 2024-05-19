@@ -1,0 +1,313 @@
+[
+    {
+      "title": "Ammachi's Amazing Machines",
+      "author": ["Rajiv Eipe"],
+      "genre": ["Juvenile Fiction"],
+      "description": "Sooraj and his grandma LOVE inventing! Join them on their latest adventure: using simple machines to make coconut barfi!...",
+      "price": 175.99,
+      "image": "http://books.google.com/books/content?id=BI1TEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "publisher": "Lindhardt og Ringhof"
+    },
+    {
+      "title": "The World Book Encyclopedia",
+      "genre": ["Encyclopedias and dictionaries"],
+      "description": "An encyclopedia designed especially to meet the needs of elementary, junior high, and senior high school students.",
+      "price": 99.99,
+      "image": "http://books.google.com/books/content?id=vhQ1AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "publisher": "Unknown"
+    },
+    {
+      "title": "Essentials of Glycobiology",
+      "author": ["Ajit Varki", "Maarten J. Chrispeels"],
+      "genre": ["Carbohydrates"],
+      "description": "Sugar chains (glycans) are often attached to proteins and lipids and have multiple roles in the organization and function of all organisms...",
+      "price": 149.99,
+      "image": "http://books.google.com/books/content?id=lH72FFWIIpgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "publisher": "CSHL Press"
+    },
+    {
+      "title": "Oswaal NCERT & CBSE Question Bank Class 8 Mathematics Book (For 2022 Exam)",
+      "author": ["Oswaal Editorial Board"],
+      "genre": ["Education"],
+      "description": "1. Chapter-wise presentation for systematic and methodical study 2. Strictly based on the latest CBSE Curriculum and National Curriculum Framework...",
+      "price": 199.99,
+      "image": "http://books.google.com/books/content?id=s--iDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "publisher": "Oswaal Books and Learning Private Limited"
+    },
+    {
+      "title": "Concepts of Biology",
+      "author": ["Samantha Fowler", "Rebecca Roush", "James Wise"],
+      "genre": ["Science"],
+      "description": "Concepts of Biology is designed for the single-semester introduction to biology course for non-science majors...",
+      "price": 129.99,
+      "image": "http://books.google.com/books/content?id=sUZRswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "publisher": "Unknown"
+    },
+    {
+      "title": "How To Win Friends And Influence People",
+      "author": ["Dale Carnegie"],
+      "genre": ["Self-Help"],
+      "description": "\"How to Win Friends and Influence People\" is one of the first best-selling self-help books ever published...",
+      "price": 230.99,
+      "image": "http://books.google.com/books/content?id=u_dyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "publisher": "DigiCat"
+    },
+    {
+      "title": "Epidemiology and Prevention of Vaccine-preventable Diseases",
+      "genre": ["Communicable diseases"],
+      "genre": ["Science"],
+      "description": "Description not available",
+      "price": 79.99,
+      "image": "http://books.google.com/books/content?id=ViwQAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "publisher": "Unknown"
+    },
+    
+      {
+        "title": "Biology 2e",
+        "author": ["Mary Ann Clark", "Jung Choi", "Matthew Douglas"],
+        "genre": [],
+        "description": "No description available",
+        "price": 0,
+        "image": "http://books.google.com/books/content?id=c9zStAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "publisher": "Unknown"
+      },
+      {
+        "title": "Pro Git",
+        "author": ["Scott Chacon"],
+        "genre": ["Computers"],
+        "description": "Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005...",
+        "price": 329.57,
+        "image": "http://books.google.com/books/content?id=HrTOa8-HPRYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "publisher": "Apress"
+      },
+      {
+        "title": "Drive",
+        "author": ["Daniel H. Pink"],
+        "genre": ["Business & Economics"],
+        "description": "Forget everything you thought you knew about how to motivate people - at work, at school, at home. It's wrong...",
+        "price": 329.57,
+        "image": "http://books.google.com/books/content?id=l6x0a-jkoGUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "publisher": "Canongate Books"
+      },
+      {
+        "title": "The Hindu Kush Himalaya Assessment",
+        "author": ["Philippus Wester", "Arabinda Mishra", "Aditi Mukherji", "Arun Bhakta Shrestha"],
+        "genre": ["Science"],
+        "description": "This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region...",
+        "price": 0,
+        "image": "http://books.google.com/books/content?id=dI2CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "publisher": "Springer"
+      },
+      {
+        "title": "A Pattern Language",
+        "author": ["Christopher Alexander"],
+        "genre": ["Architecture"],
+        "description": "You can use this book to design a house for yourself with your family; you can use it to work with your neighbors to improve your town and neighborhood...",
+        "price": 644.35,
+        "image": "http://books.google.com/books/content?id=FTpxDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "publisher": "Oxford University Press"
+      },
+       {
+          "title": "Deep Work",
+          "author": ["Cal Newport"],
+          "genre": ["Business & Economics"],
+          "description": "Master one of our economy’s most rare skills and achieve groundbreaking results with this “exciting” book...",
+          "price": 299.99,
+          "image": "http://books.google.com/books/content?id=B_L8CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "publisher": "Hachette UK"
+        },
+        {
+          "title": "Epidemiology and Prevention of Vaccine-preventable Diseases",
+          "publishedDate": "2000",
+          "genre": ["Communicable diseases"],
+          "description": "Description not available",
+          "price": 0.99,
+          "image": "http://books.google.com/books/content?id=ViwQAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "publisher": "Unknown",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=ViwQAQAAMAAJ&rdid=book-ViwQAQAAMAAJ&rdot=1&source=gbs_api"
+        },
+        {
+          "title": "Drive",
+          "subtitle": "The Surprising Truth About What Motivates Us",
+          "author": ["Daniel H. Pink"],
+          "genre": ["Business & Economics"],
+          "description": "Forget everything you thought you knew about how to motivate people - at work, at school, at home...",
+          "price": 329.57,
+          "image": "http://books.google.com/books/content?id=l6x0a-jkoGUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "publisher": "Canongate Books",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=l6x0a-jkoGUC&rdid=book-l6x0a-jkoGUC&rdot=1&source=gbs_api"
+        },
+        {
+          "title": "From Dissertation to Book",
+          "author": ["William Germano"],
+          "genre": ["Reference"],
+          "description": "All new Phd's hope that their dissertations can become books...",
+          "price": 0.99,
+          "image": "http://books.google.com/books/content?id=gJVtu6vuBpkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "publisher": "University of Chicago Press",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=gJVtu6vuBpkC&source=gbs_api"
+        },
+        {
+          "title": "State of Wisconsin Blue Book",
+          "publishedDate": "1893",
+          "genre": ["Wisconsin"],
+          "description": "Description not available",
+          "price": 0.99,
+          "image": "http://books.google.com/books/content?id=-EnlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "publisher": "Unknown",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=-EnlAAAAMAAJ&rdid=book--EnlAAAAMAAJ&rdot=1&source=gbs_api"
+        },
+        {
+            "title": "Epidemiology and Prevention of Vaccine-preventable Diseases",
+            "author": ["Unknown Author"],
+            "genre": ["Communicable diseases"],
+            "description": "Description not available",
+            "price": 0,
+            "image": "http://books.google.com/books/content?id=ViwQAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "publisher": "Unknown"
+          },
+          {
+            "title": "Book Lovers",
+            "author": ["Emily Henry"],
+            "genre": ["Fiction"],
+            "description": "“One of my favorite authors.”—Colleen Hoover An insightful, delightful, instant #1 New York Times bestseller from the author of Beach Read and People We Meet on Vacation...",
+            "price": 0,
+            "image": "http://books.google.com/books/content?id=Ju5nEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "publisher": "Penguin"
+          },
+          {
+            "title": "From Dissertation to Book",
+            "author": ["William Germano"],
+            "genre": ["Reference"],
+            "description": "All new Phd's hope that their dissertations can become books. But a dissertation is written for a committee and a book for the larger world...",
+            "price": 0,
+            "image": "http://books.google.com/books/content?id=gJVtu6vuBpkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "publisher": "University of Chicago Press"
+          },
+          {
+            "title": "Building Secure and Reliable Systems",
+            "author": ["Heather Adkins", "Betsy Beyer", "Paul Blankinship", "Piotr Lewandowski", "Ana Oprea", "Adam Stubblefield"],
+            "genre": ["Computers"],
+            "description": "Can a system be considered truly reliable if it isn't fundamentally secure? Or can it be considered secure if it's unreliable?...",
+            "price": 0,
+            "image": "http://books.google.com/books/content?id=93HnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "publisher": "O'Reilly Media"
+          },
+          {
+            "title": "Data Feminism",
+            "author": ["Catherine D'Ignazio", "Lauren F. Klein"],
+            "genre": ["Social Science"],
+            "description": "A new way of thinking about data science and data ethics that is informed by the ideas of intersectional feminism...",
+            "price": 1647.28,
+            "image": "http://books.google.com/books/content?id=zZnSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "publisher": "MIT Press"
+          },
+          
+            {
+              "title": "Drive",
+              "author": ["Daniel H. Pink"],
+              "genre": ["Business & Economics"],
+              "description": "Forget everything you thought you knew about how to motivate people - at work, at school, at home...",
+              "price": 470.82,
+              "image": "http://books.google.com/books/content?id=l6x0a-jkoGUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Canongate Books"
+            },
+            {
+              "title": "From Dissertation to Book",
+              "author": ["William Germano"],
+              "genre": ["Reference"],
+              "description": "All new Phd's hope that their dissertations can become books. But a dissertation is written for a committee and a book for the larger world...",
+              "price": 200,
+              "image": "http://books.google.com/books/content?id=gJVtu6vuBpkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "University of Chicago Press"
+            },
+            {
+              "title": "Building Secure and Reliable Systems",
+              "author": ["Heather Adkins", "Betsy Beyer", "Paul Blankinship", "Piotr Lewandowski", "Ana Oprea", "Adam Stubblefield"],
+              "genre": ["Computers"],
+              "description": "Can a system be considered truly reliable if it isn't fundamentally secure? Or can it be considered secure if it's unreliable?...",
+              "price": 124,
+              "image": "http://books.google.com/books/content?id=93HnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "O'Reilly Media"
+            },
+            {
+              "title": "The Hindu Kush Himalaya Assessment",
+              "author": ["Philippus Wester", "Arabinda Mishra", "Aditi Mukherji", "Arun Bhakta Shrestha"],
+              "genre": ["Science"],
+              "description": "This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region...",
+              "price": 678,
+              "image": "http://books.google.com/books/content?id=dI2CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Springer"
+            },
+            {
+              "title": "The Intelligent Investor",
+              "author": ["Benjamin Graham"],
+              "genre": ["Investments."],
+              "description": "Analyzes the principles of stock selection and various approaches to investing, and compares the patterns and behavior of specific securities under diverse economic conditions",
+              "price": 2354,
+              "image": "http://books.google.com/books/content?id=779fQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+              "publisher": "Harpercollins"
+            }
+          ,
+          
+            {
+              "title": "State of Wisconsin Blue Book",
+              "author": ["Unknown Author"],
+              "genre": ["Wisconsin"],
+              "description": "The State of Wisconsin Blue Book published in 1893 with 810 pages. Explore the history and details of Wisconsin during that period.",
+              "price": 149.99,
+              "image": "http://books.google.com/books/content?id=-EnlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Unknown"
+            },
+            {
+              "title": "The Bad Bug Book",
+              "author": ["FDA", "U S Food & Drug Administrati"],
+              "genre": ["Medical"],
+              "description": "The Bad Bug Book provides basic facts regarding foodborne pathogenic microorganisms and natural toxins. A comprehensive handbook for understanding food safety.",
+              "price": 99.99,
+              "image": "http://books.google.com/books/content?id=RXdqAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Imp"
+            },
+            {
+              "title": "Accident Book",
+              "author": ["Health and Safety Executive (Hse)"],
+              
+              "genre": [],
+              "description": "Contains 50 copies of the record sheet, instructions on how to use the book, and guidance on the Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 1995 and the Health and Safety (First Aid) Regulations 1991.",
+              "price": 129.99,
+              "image": "http://books.google.com/books/content?id=zag2mgEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Unknown"
+            },
+            {
+              "title": "The Life You Can Save",
+              "author": ["Peter Singer"],
+              "genre": ["Philosophy"],
+              "description": "The groundbreaking book that redefines what it means to be smart, with a new introduction by the author. The Life You Can Save teaches us to be a part of the solution, helping others as we help ourselves.",
+              "price": 199.99,
+              "image": "http://books.google.com/books/content?id=gGn4cdxEgvEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Random House"
+            },
+            {
+              "title": "Emotional Intelligence",
+              "author": ["Daniel Goleman"],
+              "genre": ["Self-Help"],
+              "description": "The groundbreaking book that redefines what it means to be smart. Emotional Intelligence explores the rational and emotional aspects of our minds, shaping our destiny.",
+              "price": 149.99,
+              "image": "http://books.google.com/books/content?id=OgXxhmGiRB0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              "publisher": "Bantam"
+            }
+          
+          
+          
+        
+        
+      
+      
+    
+    
+  ]
+  

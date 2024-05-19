@@ -1,0 +1,100 @@
+<!-- discussion.component.html -->
+<br><br><br><br><br>
+
+
+ <div class="container">
+    <div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="toggleFormVisibility()">Add Discussion</button>
+      
+        <div *ngIf="isFormVisible">
+          <form class="max-w-md mx-auto mt-4 bg-pink-200 p-6 rounded-md shadow-md">
+            <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+            <input type="text" id="title" name="title" [(ngModel)]="discussionData.title" required
+                   class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+      
+            <label for="content" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Content:</label>
+            <textarea id="content" name="content" [(ngModel)]="discussionData.content" required
+                      class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"></textarea>
+      
+            <label for="genre" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Genre:</label>
+            <select id="genre" name="genre" [(ngModel)]="discussionData.genre" multiple
+                    class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+                    <option selected value="">Filter By Genre</option>
+                    <option value="Science">Science</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Investments">Investments</option>
+                    <option value="Education">Education</option>
+                    <option value="Juvenile Fiction">Juvenile Fiction</option>
+                    <option value="Business & Economics">Business & Economics</option>
+                    <option value="Self-Help">Self-Help</option>
+                    <option value="Philosophy">Philosophy</option>
+                    <option value="Medical">Medical</option>
+            </select>
+      
+            <label for="author" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Author:</label>
+            <input type="text" id="author" name="author" [(ngModel)]="discussionData.author"
+                   class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+      
+            <div class="mt-6">
+              <button type="button" (click)="createDiscussion()"
+                      class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-4">
+                Create Discussion
+              </button>
+              <button type="button" (click)="toggleFormVisibility()"
+                      class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="text-center mb-4">
+        <label for="filterGenre" class="block text-gray-700 text-sm font-bold mb-2">Filter by Genre:</label>
+        <select id="filterGenre" name="filterGenre" [(ngModel)]="selectedFilterGenre" (change)="applyGenreFilter()"
+                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+                <option selected value="">Filter By Genre</option>
+                <option value="Science">Science</option>
+                <option value="Computers">Computers</option>
+                <option value="fiction">Fiction</option>
+                <option value="Investments">Investments</option>
+                <option value="Education">Education</option>
+                <option value="Juvenile Fiction">Juvenile Fiction</option>
+                <option value="Business & Economics">Business & Economics</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Medical">Medical</option>
+          <!-- Add other genres as needed -->
+        </select>
+      </div>
+
+ </div> 
+
+
+
+
+ <h2 class="text-2xl font-bold mb-4 text-center">All Discussions:</h2>
+
+
+   
+  
+    <div class="allContainer">
+      <div *ngFor="let discussion of filteredDiscussions" class="p-4 rounded-md shadow-md bg-gradient-to-r from-teal-100 via-teal-200 to-teal-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80">
+        <h3 class="text-xl font-bold mb-2">{{ discussion.title }}</h3>
+       
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-gray-600">👤 {{ discussion.username }}</span>
+          
+
+          <div class="flex mt-2">
+            <span *ngFor="let genre of discussion.genre" class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300">
+              {{ genre }}</span>
+
+          </div>
+          <a [routerLink]="['/discussion', discussion._id]" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View</a>
+        </div>
+      </div>
+    </div>

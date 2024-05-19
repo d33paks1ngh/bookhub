@@ -1,0 +1,18 @@
+.container
+{
+    width:70%;
+    margin: 0 auto;
+    padding: 10px;
+   
+   
+}
+
+.allContainer
+{
+    width:70%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,96 @@
+<br><br><br><br>
+
+
+<div class="container mx-auto p-8">
+
+    <!-- User Avatar and Name Section -->
+    <div class="flex items-center mb-8">
+        <img src="https://cdn-icons-png.flaticon.com/512/3607/3607444.png" alt="User Avatar" class="w-20 h-20 rounded-full mr-4">
+        <div>
+            <h2 class="text-3xl font-semibold text-blue-900">{{userDetails.username}}</h2>
+            <p class="text-gray-600">{{userDetails.email}}</p>
+        </div>
+    </div>
+
+    <!-- Discussion Section -->
+    <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4">Discussion</h3>
+        <div *ngIf="userDiscussion.length > 0; else noDisussion">
+
+            <table class="min-w-full bg-blue-100 border border-blue-300">
+                <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b">Title</th>
+                   
+                    <th class="py-2 px-4 border-b">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr *ngFor="let discussion of userDiscussion">
+                    <td class="py-2 px-4 border-b text-center">{{discussion.title}}</td>
+                   
+                    <td class="py-2 px-4 border-b text-center">
+                        <a [routerLink]="['/discussion', discussion._id]" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            View
+                        </a>
+                    </td>
+                    
+                </tr>
+            
+            
+                </tbody>
+            </table>
+
+        </div>
+
+        <ng-template #noDisussion>
+            <h3>No discussion added yet.</h3>
+        </ng-template>
+    </div>
+
+    <!-- Books Section -->
+    <div>
+        <h3 class="text-xl font-semibold mb-4">Books Published By : {{userDetails.username}}</h3>
+        <div *ngIf="userBooks.length > 0; else noBooks">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div *ngFor="let book of userBooks" class="bg-blue-100 p-4 rounded-md shadow-md">
+                    <img [src]="book.image" alt="Book Cover" class="w-full h-32 object-cover mb-4">
+
+                <a [routerLink]="['/book', book._id]"> 
+                    <h4 class="text-lg font-semibold text-blue-900">{{ book.title }}</h4>
+                </a>   
+                    <p class="text-gray-600">Author: {{ book.author }}</p>
+                </div>
+            </div>
+        </div>
+        <ng-template #noBooks>
+            <p>No books added yet.</p>
+        </ng-template>
+    </div>
+
+
+<br>
+ <!-- Reading List -->
+ <div>
+    <h3 class="text-xl font-semibold mb-4">Reading List</h3>
+    <div *ngIf="userReadingList.length > 0; else noReadingList">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div *ngFor="let book of userReadingList" class="bg-blue-100 p-4 rounded-md shadow-md">
+                <img [src]="book.image" alt="Book Cover" class="w-full h-32 object-cover mb-4">
+
+            <a [routerLink]="['/book', book._id]"> 
+                <h4 class="text-lg font-semibold text-blue-900">{{ book.title }}</h4>
+            </a>   
+                
+            </div>
+        </div>
+    </div>
+    <ng-template #noReadingList>
+        <p>No books added to reading List yet.</p>
+    </ng-template>
+</div>
+
+
+
+</div>

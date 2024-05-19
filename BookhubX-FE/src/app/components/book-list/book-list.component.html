@@ -1,0 +1,112 @@
+<br><br><br>
+
+
+
+<!-- banner -->
+
+
+<img class="h-auto max-w-full" src="../../../assets/banner/img3.jpg" alt="image description">
+
+
+<!-- banner-end -->
+
+<div class="searchContainer">
+
+
+    <form (input)="onSearchInputChange($event)" >   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="default-search"  class=" p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Books by Title..." required>
+           
+        </div>
+    </form>
+
+    <select id="genre" (change)="onGenreSelectChange($event)" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected value="">Filter By Genre</option>
+        <option value="Science">Science</option>
+        <option value="Computers">Computers</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Investments">Investments</option>
+        <option value="Education">Education</option>
+        <option value="Juvenile Fiction">Juvenile Fiction</option>
+        <option value="Business & Economics">Business & Economics</option>
+        <option value="Self-Help">Self-Help</option>
+        <option value="Philosophy">Philosophy</option>
+        <option value="Medical">Medical</option>
+    </select>
+
+
+    <!-- <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Sort By Price</option>
+        <option value="desc">High to Low</option>
+        <option value="asc">Low to High</option>
+       
+    </select> -->
+
+
+</div>
+
+
+
+
+
+<!-- book-list.component.html -->
+
+<div *ngIf="loading$ | async; else content">
+    Loading...
+  </div>
+  
+  <ng-template #content>
+    <div *ngIf="error$ | async as error">
+      Error: {{ error }}
+    </div>
+  
+    <div *ngIf="books$ | async as books">
+      
+
+      <div class="container">
+        <div *ngFor="let book of books">
+
+
+
+
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="p-4 mx-auto rounded-t-lg" width="200px" src="{{book.image}}" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                        <h3 class="text-md font-semibold tracking-tight text-gray-900 dark:text-white ellipsis-text">{{ book.title }}</h3>
+                    </a>
+                    <div class="flex items-center mt-2.5 mb-5">
+                        
+                        
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3 ellipsis-text">👤 {{ book.author.join(', ') }}</span>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">₹ {{ book.price }}</span>
+                        <a [routerLink]="['/book', book._id]" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            
+          </div>
+      </div>
+     
+    </div>
+  </ng-template>
+  
+
+

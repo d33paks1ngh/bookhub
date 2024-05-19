@@ -1,0 +1,299 @@
+<br><br><br><br><br><br>
+<div class="container">
+    <div class="md:flex">
+        <ul class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+            <li>
+                <a  routerLink="/mydiscussion" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
+                    <svg class="w-4 h-4 me-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                    </svg>
+                    My Discussions
+                </a>
+            </li>
+            <li>
+                <a routerLink="/myreadinglist" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+                    Reading List
+                </a>
+            </li>
+           
+
+            <!-- <li >
+              <a routerLink="/addbook" class="inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg active w-full dark:bg-blue-600">
+                  <svg class="w-4 h-4 me-2 text-white-500 dark:text-white-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+                 Add Book
+              </a>
+          </li> -->
+
+           <li *ngIf="(userrole$ | async) == 'admin' || (userrole$ | async) == 'author'">
+            <a routerLink="/addbook" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+               Add Book
+            </a>
+        </li> 
+            
+        <li *ngIf="(userrole$ | async) == 'admin'">
+          <a routerLink="/allorder" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+            All Orders
+          </a>
+      </li> 
+
+           
+        </ul>
+        <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Add Book</h3>
+            
+
+
+
+<!-- add-book.component.html -->
+
+<button (click)="toggleForm()" class="items-center px-3 py-2 text-white bg-blue-700 rounded-lg active  dark:bg-blue-600">
+    + Add 
+  </button>
+
+  <!-- add-form -->
+  <div *ngIf="showForm">
+<div class="container mx-auto p-8">
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()" class="max-w-xl mx-auto">
+      <!-- Title -->
+      <div class="mb-4">
+        <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+        <input type="text" id="title" formControlName="title" class="w-full border rounded py-2 px-3">
+      </div>
+  
+      <!-- Genre (multiselect) -->
+      <div class="mb-4">
+        <label for="genre" class="block text-gray-700 text-sm font-bold mb-2">Genre:</label>
+        <select multiple id="genre" formControlName="genre" class="w-full border rounded py-2 px-3">
+          <!-- Populate genres dynamically if needed -->
+          <option value="Science">Science</option>
+          <option value="Computers">Computers</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Investments">Investments</option>
+          <option value="Education">Education</option>
+          <option value="Juvenile Fiction">Juvenile Fiction</option>
+          <option value="Business & Economics">Business & Economics</option>
+          <option value="Self-Help">Self-Help</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="Medical">Medical</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+  
+      <!-- Description -->
+      <div class="mb-4">
+        <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description:</label>
+        <textarea id="description" formControlName="description" class="w-full border rounded py-2 px-3"></textarea>
+      </div>
+  
+      <!-- Price -->
+      <div class="mb-4">
+        <label for="price" class="block text-gray-700 text-sm font-bold mb-2">Price:</label>
+        <input type="text" id="price" formControlName="price" class="w-full border rounded py-2 px-3">
+      </div>
+  
+      <!-- Image -->
+      <div class="mb-4">
+        <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Image URL:</label>
+        <input type="text" id="image" formControlName="image" class="w-full border rounded py-2 px-3">
+      </div>
+  
+      <!-- Publisher -->
+      <div class="mb-4">
+        <label for="publisher" class="block text-gray-700 text-sm font-bold mb-2">Publisher:</label>
+        <input type="text" id="publisher" formControlName="publisher" class="w-full border rounded py-2 px-3">
+      </div>
+  
+      <!-- Stock -->
+      <div class="mb-4">
+        <label for="stock" class="block text-gray-700 text-sm font-bold mb-2">Stock:</label>
+        <input type="number" id="stock" formControlName="stock" class="w-full border rounded py-2 px-3">
+      </div>
+  
+      <!-- Buttons -->
+      <div class="flex justify-between">
+        <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded">Save</button>
+        <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" (click)="onCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  
+
+ 
+
+
+</div>
+
+
+<!-- editable-form -->
+
+  <!-- Add Edit Form -->
+  <div *ngIf="showEditForm">
+    <div class="container mx-auto p-8">
+      <form [formGroup]="editBookForm" (ngSubmit)="onSubmitEdit()" class="max-w-xl mx-auto">
+        <!-- Title -->
+        <div class="mb-4">
+          <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+          <input type="text" id="title" formControlName="title" class="w-full border rounded py-2 px-3">
+        </div>
+  
+        <!-- Genre (multiselect) -->
+        <div class="mb-4">
+          <label for="genre" class="block text-gray-700 text-sm font-bold mb-2">Genre:</label>
+          <select multiple id="genre" formControlName="genre" class="w-full border rounded py-2 px-3">
+            <!-- Populate genres dynamically if needed -->
+            <option value="Science">Science</option>
+            <option value="Computers">Computers</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Investments">Investments</option>
+            <option value="Education">Education</option>
+            <option value="Juvenile Fiction">Juvenile Fiction</option>
+            <option value="Business & Economics">Business & Economics</option>
+            <option value="Self-Help">Self-Help</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="Medical">Medical</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+  
+        <!-- Description -->
+        <div class="mb-4">
+          <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description:</label>
+          <textarea id="description" formControlName="description" class="w-full border rounded py-2 px-3"></textarea>
+        </div>
+  
+        <!-- Price -->
+        <div class="mb-4">
+          <label for="price" class="block text-gray-700 text-sm font-bold mb-2">Price:</label>
+          <input type="text" id="price" formControlName="price" class="w-full border rounded py-2 px-3">
+        </div>
+  
+        <!-- Image -->
+        <div class="mb-4">
+          <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Image URL:</label>
+          <input type="text" id="image" formControlName="image" class="w-full border rounded py-2 px-3">
+        </div>
+  
+        <!-- Publisher -->
+        <div class="mb-4">
+          <label for="publisher" class="block text-gray-700 text-sm font-bold mb-2">Publisher:</label>
+          <input type="text" id="publisher" formControlName="publisher" class="w-full border rounded py-2 px-3">
+        </div>
+  
+        <!-- Stock -->
+        <div class="mb-4">
+          <label for="stock" class="block text-gray-700 text-sm font-bold mb-2">Stock:</label>
+          <input type="number" id="stock" formControlName="stock" class="w-full border rounded py-2 px-3">
+        </div>
+  
+        <!-- Buttons -->
+        <div class="flex justify-between">
+          <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded">Save</button>
+          <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" (click)="onCancelEdit()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+ <!-- show-all-books-list -->
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    
+    <div *ngFor="let book of userbooks" class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+      <!-- Book Title -->
+      <h3 class="text-xl font-bold mb-2">{{ book.title }}</h3>
+      
+      <!-- Book Image -->
+      <img [src]="book.image" alt="{{ book.title }}" class="w-full h-40 object-cover mb-2">
+
+      <!-- Other Book Information (add more fields as needed) -->
+      
+     
+      <p class="text-gray-700 dark:text-gray-400">Price: {{ book.price | currency:'INR':'symbol' }}</p>
+      <p class="text-gray-700 dark:text-gray-400">Stock: {{ book.stock }}</p>
+      
+      <button (click)="editBook(book._id)" class="bg-blue-500 text-white px-2 py-1 rounded">Edit</button>
+
+      <button (click)="deleteBook(book._id)" class="bg-red-500 text-white px-2 py-1 rounded">Delete</button>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Delete Confirmation Modal -->
+<div *ngIf="showDeleteConfirmation" class="fixed inset-0 overflow-y-auto">
+  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+    </div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+    <div
+      class="inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+    >
+      <div class="bg-white dark:bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+        <div class="sm:flex sm:items-start">
+          <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+            <!-- Heroicon name: exclamation -->
+            <svg
+              class="h-6 w-6 text-red-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v2m0 4h.01m-6-3a8.5 8.5 0 1 0 17 0h0a8.5 8.5 0 0 0-17 0z"
+              ></path>
+            </svg>
+          </div>
+          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+            <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+              Delete Book
+            </h3>
+            <div class="mt-2">
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Are you sure you want to delete this book?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 dark:bg-gray-700 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+        <button
+          (click)="confirmDelete()"
+          type="button"
+          class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-500 text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+        >
+          Delete
+        </button>
+        <button
+          (click)="cancelDelete()"
+          type="button"
+          class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

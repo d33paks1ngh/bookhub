@@ -1,0 +1,6 @@
+<p>chat-button works!</p>
+<div *ngIf="!isChatOpen" class="floating-button" (click)="toggleChat()">
+    <span>Chat</span>
+  </div>
+  <app-chat *ngIf="isChatOpen"></app-chat>
+  
