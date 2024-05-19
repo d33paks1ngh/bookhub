@@ -42,7 +42,7 @@ app.use("/chatbot",chatbotRouter)
 
 
 
-app.listen(8080,async()=>{
+app.listen(process.env.PORT,async()=>{
 
     try {
         await connection
